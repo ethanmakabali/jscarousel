@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/20c02e1873.js" crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="css/carousel.css">
     <title>JS Slideshow</title>
 </head>
 <body>
     <header>
-        <img src="images/logofrog.png" alt="Frog">
+        <img src="images/carousel/logofrog.png" alt="Frog">
         <div>
             <h2>Check out my trippy frogs</h2>
             <h3>Don't touch though</h3>
@@ -17,19 +22,23 @@
     <main>
         <div class="container">
             <div class="imagecarousel">
-                <div class="image fadeout"><img src="images/frog_1.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_2.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_3.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_4.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_5.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_6.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_7.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_8.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_9.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_10.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_11.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_12.jpg" alt=""></div>
-                <div class="image fadeout"><img src="images/frog_13.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_1.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_2.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_3.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_4.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_5.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_6.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_7.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_8.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_9.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_10.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_11.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_12.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_13.jpg" alt=""></div>
+
+                <!-- Font Awesome Next & Previous Buttons -->
+                <div class="prev"><i onclick="showImage(-1)" class="fa-solid fa-backward"></i></div>
+                <div class="next"><i onclick="showImage(1)" class="fa-solid fa-forward"></i></div>
             </div>
         </div>
         <div class="dots">
@@ -49,8 +58,8 @@
         </div>
     </main>
     <footer>
-        <p>&copy;<span id="copyright"></span> Michael Roberts Productions</p>
+        <p>&copy;<span id="copyright"></span> Ethan Makabali Productions</p>
     </footer>
 </body>
 </html>
-<script src="js/scripts.js"></script>
+<script src="js/carousel.js"></script>
